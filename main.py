@@ -2,7 +2,7 @@ from telegram import Update
 from telegram.ext import ApplicationBuilder, ContextTypes, CommandHandler
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await context.bot.send_message(chat_id=update.effective_chat.id, text="I'm a bot, please talk to me!")
+    await context.bot.send_photo(chat_id=update.effective_chat.id, photo="open(photo.jpg,rb")
 
 if __name__ == '__main__':
     # আপনার এপিআই টোকেনটি এখানে বসান
